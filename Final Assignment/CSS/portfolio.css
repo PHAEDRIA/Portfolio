@@ -216,20 +216,19 @@ footer {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 1.9%;
     height: 400px;
     background-color: #000000;
-
-                             /* ADDED VIDEO */
-}
-
-#Github Video {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     
+    /* ADDED VIDEO */
+    }
+    
+    #Github_Video {
+    margin: auto;
+    padding: 10px;
+    height: 380px;
     }
 
 
