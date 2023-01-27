@@ -4,3 +4,7 @@ Bootstrap4_Project is my first project using bootstrap, (where has this been all
 Final Assignment, this one is where I get to show off my other skills as a content creator and video editor, on my down time I love to clip videos and photoshop, I was very proud of this one. I wanted to do a sleek vibe page with my GitHub video that I created for it.
 
 Gift of life website, yes, I am a novel writer, finished my first novel in three weeks and turns out to be two as it was so large, working on the final instalment and thought how fun to do a page for it, showcase myself as a author and showcase the difference in vibes from tech to novelist in appearance. This is my side project in the works while I am learning code.
+
+Tic Tac Toe, is my first project utilizing HMTL, CSS, JS, I added my own pizzas to ot, its fun to add ones style, I loved the result.
+
+Calculator-I made a calculator! Ok so its not mastering the world domination code but first project like this and is very cool. I cannot wait to see what's ahead.
