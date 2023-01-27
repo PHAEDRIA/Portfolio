@@ -1,0 +1,92 @@
+html {
+    font-size: 70%;
+    box-sizing:border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid rgb(250, 4, 4);
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: black;
+    color: rgb(5, 248, 25);
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 4, 4);
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: rgb(3, 252, 3);
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0, 0.6));
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+    /*Each value below is separated by a comma ',' after the rgba values*/                 /*FIX with semicolon?*/
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+    insert 0 1px 0 0 rgba(255, 255, 255, 0.5),
+    insert 0 -1px 0 0 rgba(255, 255, 255, 0.5),
+
+}
+
+button-hover {
+    background-color: rgb(151, 151, 151);
+}
+
+.operator {
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent, transparent 50%, rgba(0, 0, 0, 0.5));
+    background-color: rgb(255, 5, 5);
+}
+
+
+
+.all-clear {
+    background-color: red;
+    background-image: linear-gradient(to bottom, transparent, transparent, transparent 50%, rgba(0, 0, 0, 0.5));
+    border-color: darkslategray;
+    color: whitesmoke;
+}
+
+.equal-sign {
+    background-color: rgb(65, 255, 7);
+    background-image: linear-gradient(to bottom, transparent, transparent, transparent 50%, rgba(0, 0, 0, 0.5));
+    border-color: darkslategray;
+    color: white;
+    height: 100%;
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    background-color: rgb(255, 17, 0);
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+
+
