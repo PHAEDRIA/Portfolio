@@ -10,6 +10,7 @@
 
     <title>Destination Ireland</title>
   </head>
+  
   <body>
     
         <div class="container">
@@ -28,9 +29,9 @@
                         <a class="nav-link text-light" href="#Tours" id="skip_navigation_link">Tours</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-lable="search">
+                    <button class="btn btn-primary text-light" type="submit">Search</button>
                 </form>
                 </div>
             </nav>
@@ -40,12 +41,13 @@
                 <div class="container">
                 <h1 class="display-4 text-light">Destination Ireland</h1>
                 <p class="lead text-light">Ireland Welcomes You!</p>
+
                 </div>
             </div>
  <!-- /JUMLTRON TITLE -->   
          
 
-<!-- ABOUT-COLUMNS -->
+<!-- ABOUT-containers -->
 
             <div class="container">
                 <div class="row align-items-start">
@@ -57,7 +59,8 @@
                         <h3 id="About" >About</h3>
                         <p>Beautiful majestic coast of Ireland, bannered with old Irish traditions mixed with modern and new adventures.</p>
                         <p>Enjoy tours of the old Liffy river to our home made brew of the world renoun Guiness brewery</p>
-                        <p>Try our pub delights;&reg; local brews and Irish music to dance the night away, our tours are disabilty &#7855;.</p>                                                                             
+                        <p>Try our pub delights;&reg; local brews and Irish music to dance the night away, our tours are disabilty
+                            &#7855;.</p>                                                                           
                     </div>
                     <div class="col">
                         <h3 id="Destinations">Destinations</h3>
@@ -85,6 +88,7 @@
                 <div class="container">
                 <h1 id="Tours" class="display-6 text-light">Tours</h1>
                 <p class="lead text-light">Pick a time and we will do the rest, relax and enjoy stress free trours!</p>
+                <button type="button" class="btn btn-outline-light"data-toggle="modal" data-target="#register">See our monthly deals</button>
                 </div>
             </div>
            
@@ -135,6 +139,72 @@
 
 <!-- /TRAVEL TIMES BOOTSTRAP -->
 
+<!--Jumbletron sign up form-->
+
+    <div class="jumbotron jumbotron-fluid big-info bg mt-5 text centre">
+        <div class="container"> 
+            <div class="container text-center">
+                <h1 class="display-4 col-lg-auto text text-primary">Book your flight now!</h1>
+                    <div class=" input mb-5 input-group-sm">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" 
+                    data-content="Submit your email to recieve great travel rewards!">Sign Up!</button>
+                    </span>
+                </div>      
+            </div>
+        </div> 
+    </div>
+ 
+
+
+
+
+  <!--/Jumbletron sign up form-->
+
+<!--Form Modal-->
+
+<div class="modal" tabindex="-1" role="dialog" id="register">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Register to recieve travel deals</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+       <form>
+            <fieldset class="form-group">
+                <label for="firstname">First Name: </label>
+                <input for="text" class="form-control" id="firstname" placeholder="First Name...">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="lastname">Last Name: </label>
+                <input for="text" class="form-control" id="lastname" placeholder="Last Name...">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="email">Email: </label>
+                <input for="email" class="form-control" id="email" placeholder="Email...">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="password">Pasword: </label>
+                <input for="password" class="form-control" id="password" placeholder="Password..."
+                data-toggle="tool-tip" title="Passwords are case sensitive.">
+            </fieldset>
+        </form>
+    </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--/End Form Modal-->
+
+
 <!-- FORMS BOOTSTRAP  FIX BELOW-->
 
             <div class="text-center">
@@ -179,5 +249,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+
+<!--jQueary code-->
+    <script>
+        $('.popover-dismiss').popover({
+        trigger: 'focus'
+        })
+
+    //Added jQueary function for bootstrap tooltip
+    $(function() {
+        $('[data-toggle="tooltip"]')
+    })
+    </script>
+
+</body>
 </html>
