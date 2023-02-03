@@ -8,3 +8,5 @@ Gift of life website, yes, I am a novel writer, finished my first novel in three
 Tic Tac Toe, is my first project utilizing HMTL, CSS, JS, I added my own pizzas to ot, its fun to add ones style, I loved the result.
 
 Calculator-I made a calculator! Ok so its not mastering the world domination code but first project like this and is very cool. I cannot wait to see what's ahead.
+
+Website-Welcome to my website! This was a fun project and loved the vibe and energy of it! 
