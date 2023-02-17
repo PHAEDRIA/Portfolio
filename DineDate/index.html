@@ -1,119 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <!--Head-->
+    
+    <!-- Head -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>Your Name Here</title>
-        <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
+        <title>PHAEDRIA THAYER</title>
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="./stylesheet/CSS_1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Nunito&display=swap" rel="stylesheet">
+
+        
     </head>
 
-    <!--Body-->
-    <body class="Background">
-        
-        <!--Navbar-->
+    <!-- Body -->
+    <body class="Background">   
+
+        <!-- Navbar -->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br>
-        <br>
-
-        <!--Background video-->
+        <!-- Background video -->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
-                <source src="./Video/Video1.mp4" type="video/mp4">
-                <!--Display message if video fails to run-->
+                <source src="../DineDate/Video/Video1.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
                 Your browser does not support HTML5 video.
             </video>
         </div>
 
-        <!--Video text-->
+        <!-- Video text -->
         <div class="Video_Text">
-            <h1 class="white-text">Phaedria Thayer Portfolio</h1>
+            <h1 class="white-text">Phaedria Thayer's Portfolio</h1>
             <strong>
                 <p class="center">
-                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    <q>
+                    Success is not final; failure is not fatal: It is the courage to continue that counts.
                     </q>
-                    <br> -Joseph Weizenbaum
+                    <br> -Winston S. Churchill<br>
                     <br>
-                    <br> My name is Phaedria Thayer. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    My name is Phaedria. Welcome to my portfolio website. On it, I will tell you about my background and experience.
                     <br>
-                    <br> Thank you for stopping by and enjoy! 
+                    <br>Thank you for stopping by and enjoy! 
                 </p>
             </strong>
         </div>
 
-        <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="images/html_custom.png" alt="Replace with your own image and description">
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../DineDate/Img/img1.jpg" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../DineDate/Img/img2.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../DineDate/Img/img3.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../DineDate/Img/img4.jpg" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../DineDate/Img/img5.jpg" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../DineDate/Img/img6.jpg" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
             </div>
-            <!--Right column-->
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="./images/PT Logo_1.png" alt="Replace with a picture of your choosing">
+            </div>
+            <!-- Right column -->
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a software developer who loves to code! As a father of two, I enjoy time with my family and traveling. 
+                    I am a software developer who loves to code! As a cat mum of two, I enjoy time with my fur babies, novel writing and traveling. 
                     <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s  Web Developer bootcamp. Knowledgable in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. 
                     <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    <br>As a full-stack developer and would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
                 </p>
             </div>
         </div>
 
-        <!--GitHub section-->
+        <!-- GitHub section -->
         <div class="Row" id="GitHub">
-            <!--Left column-->
+            <!-- Left column -->
             <div class="Column_1">
-                <h1>GitHub</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
+                <h1>GitHub & LinkedIn</h1>
+                <p>You can view my GitHub profile here:
                     <br>
-                    <p class="center"><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy Github</a></p>
+                    <p class="center"><a href="https://github.com/PHAEDRIA" target="_blank">Phaedria Thayer Github</a></p>
+                </p>
+                <p>You can view my LinkedIn profile here:
+                    <br>
+                    <p class="center"><a href="https://www.linkedin.com/in/phaedriathayer/" target="_blank">Phaedria Thayer LinkedIn</a></p>
                 </p>
             </div>
-            <!--Right column-->
+            <!-- Right column -->
             <div class="Column_2">
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
-            </div>
-        </div>
+                <div>
+                    <video autoplay muted loop id="Github_Video">
+                    <source src="./video/video_4-1.mp4" type="video/mp4">
+                    <!--Display message if video fails to run-->
+                    Your browser does not support HTML5 video.
+                    </video>
+                    </div>
+                    </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="images/html_custom.png" alt="Contact_Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+        <!-- Contact form -->
+        <div id="Contact">
+           <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+           <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+         
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
-            </div>
+           </div>
         </div>
-
-        <!--Footer section-->
+        
+        <!-- Footer section -->
         <footer>
-            <p>
-                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
-            </p>
+                <p class="center">&copy Koruption Tech., <a href="https://www.learncodinganywhere.com/" target="_blank">Phaedria Thayer</a></p><br>
         </footer>
+        <script src="./js/sample_portfolio.js"></script>
     </body>
 </html>
